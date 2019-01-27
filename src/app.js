@@ -29,7 +29,7 @@ Vue.prototype.$storage = storage
 
 // mixin for handling title
 Vue.mixin(titleMixin)
-Vue.mixin(keywordsMixin)
+// Vue.mixin(keywordsMixin)
 Vue.mixin(descriptionMixin)
 
 // register global utility filters.

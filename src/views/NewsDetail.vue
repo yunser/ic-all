@@ -14,9 +14,7 @@
                         <article class="article" v-html="article.content">
                         </article>
                         <div class="tags">
-                            <mu-badge class="tag" content="房地产"></mu-badge>
-                            <mu-badge class="tag" content="电子"></mu-badge>
-                            <mu-badge class="tag" content="晶振"></mu-badge>
+                            <mu-badge class="tag" :content="tag" v-for="tag in tags"></mu-badge>
                         </div>
                     </div>
                 </mu-col>
@@ -41,7 +39,8 @@ export default {
     data() {
         return {
             loading: false,
-            article: null
+            article: null,
+            tags: ['1', '2', '3']
         }
     },
     computed: {
@@ -58,6 +57,7 @@ export default {
             response => {
                 let data = response.data
                 this.article = data
+                this.tags = this.article.split(',')
                 this.loading = false
             },
             response => {

@@ -23,7 +23,13 @@
                     </div>
                 </mu-col>
                 <mu-col span="6">
-                    212
+                    <div class="side-av-box">
+                        <div class="container">
+                            <a href="" target="_blank">
+                                <img class="av-img" src="/public/img/ad_side.png">
+                            </a>
+                        </div>
+                    </div>
                 </mu-col>
             </mu-row>
             <h2>相关需求</h2>
